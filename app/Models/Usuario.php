@@ -12,6 +12,7 @@ class Usuario extends Model
 
     protected $table = 'usuarios';
     protected $fillable = ['nombre', 'email', 'password', 'rol_id'];
+    protected $guard_name = 'web';
 
     public function compras() { return $this->hasMany(Compra::class, 'usuario_id'); }
     public function ventas() { return $this->hasMany(Venta::class, 'usuario_id'); }
