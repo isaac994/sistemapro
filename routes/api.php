@@ -1,17 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\UsuarioController;
-use App\Http\Controllers\Api\ClienteController;
-use App\Http\Controllers\Api\ProveedorController;
-use App\Http\Controllers\Api\CategoriaController;
-use App\Http\Controllers\Api\MarcaController;
-use App\Http\Controllers\Api\ProductoController;
-use App\Http\Controllers\Api\InventarioController;
-use App\Http\Controllers\Api\CompraController;
-use App\Http\Controllers\Api\VentaController;
-use App\Http\Controllers\Api\PagoController;
-use App\Http\Controllers\Api\ReporteController;
+use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\ProveedorController;
+use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\MarcaController;
+use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\InventarioController;
+use App\Http\Controllers\CompraController;
+use App\Http\Controllers\VentaController;
+use App\Http\Controllers\PagoController;
+use App\Http\Controllers\ReporteController;
 
 Route::middleware('auth:sanctum')->prefix('api')->group(function () {
     Route::apiResource('usuarios', UsuarioController::class);
